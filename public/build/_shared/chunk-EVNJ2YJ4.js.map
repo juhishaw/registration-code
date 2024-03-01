@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/utils/helpers.ts"],
+  "sourcesContent": ["// REMIX HMR BEGIN\nimport * as __hmr__ from \"remix:hmr\";\nif (import.meta) {\nimport.meta.hot = __hmr__.createHotContext(\n//@ts-expect-error\n\"app/utils/helpers.ts\"\n);\nimport.meta.hot.lastModified = \"1708356365270.3909\";\n}\n// REMIX HMR END\n\nexport function classNames(...classes: string[]) {\n  return classes.filter(Boolean).join(' ')\n}\n\nexport type Props<T> = T & {\n  [index: string]: any\n}\n"],
+  "mappings": ";;;;;AAEA,IAAI,aAAa;AACjB,cAAY,MAAc;AAAA;AAAA,IAE1B;AAAA,EACA;AACA,cAAY,IAAI,eAAe;AAC/B;AAGO,SAAS,cAAc,SAAmB;AAC/C,SAAO,QAAQ,OAAO,OAAO,EAAE,KAAK,GAAG;AACzC;",
+  "names": []
+}

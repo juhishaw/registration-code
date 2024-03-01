@@ -1,0 +1,22 @@
+@import "./helper";
+@import "./variable";
+
+.common-cta {
+    padding: 12px 24px;
+    @extend .text-18-500;
+    width: 100%;
+
+    .icon-arrow-right {
+        position: relative;
+        top: 1px;
+    }
+
+    &.primary {
+        color: $white;
+        @extend .linear-gard-orange-bg;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}

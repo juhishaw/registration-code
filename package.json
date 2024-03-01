@@ -1,0 +1,44 @@
+{
+  "name": "@web3firewall/frontend",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual -c \"npm run start\"",
+    "start": "wrangler pages dev --compatibility-date=2023-06-21 ./public --binding W3F_API_ORIGIN=https://api.web3firewall.rocks",
+    "typecheck": "tsc",
+    "pages:deploy": "npm run build && wrangler pages deploy ./public",
+    "pages:log": "wrangler pages deployment tail"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@remix-run/cloudflare": "^2.0.1",
+    "@remix-run/cloudflare-pages": "^2.0.1",
+    "@remix-run/css-bundle": "^2.0.1",
+    "@remix-run/react": "^2.0.1",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230518.0",
+    "@remix-run/dev": "^2.0.1",
+    "@remix-run/eslint-config": "^2.0.1",
+    "@tailwindcss/forms": "^0.5.6",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.38.0",
+    "postcss": "^8.4.31",
+    "postcss-import": "^15.1.0",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.0",
+    "wrangler": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
